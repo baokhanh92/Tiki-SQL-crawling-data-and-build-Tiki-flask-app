@@ -12,10 +12,14 @@
 **In order to be able to duplicate Tiki and show them on our site, we break the hard job into two main steps:**
 
    **1. Scrawl data on Tiki and stores them in Postgres SQL under 2 tables:**
-   
-     - Categories: scrawl all category on Tiki.vn
-     - Products: scrawl products from 4 categorie
-    Source file: jupyter notebook
+   All ipynb files is database, include:
+    1. TIKIW2.MAINPAGE.KHANH(work, scrawl tiki.vn by me)
+    2. scrape_and_insertDB (work, scrawl fullpage)
+    3. productDB (still debuging, scrawl full page by me)
+    4. TIKIW2.PRODUCTS.KHANH(still debuging, scrawl full page by me)
+    
+    - Categories: scrawl all category on Tiki.vn
+    - Products: scrawl products from 4 categorie 
 
 **Categories table**![](https://i.imgur.com/2OtIxTp.png)
 
