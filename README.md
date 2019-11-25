@@ -1,9 +1,6 @@
 # WEEK 2 PROJECT
 ### Team: Vu + Khanh 
 
-# WEEK 2 PROJECT
-### Team: Vu + Khanh 
-
 ## Overview outcome
 **The result:** ![Alt Text](https://i.imgur.com/VjJFKxH.png)
 
