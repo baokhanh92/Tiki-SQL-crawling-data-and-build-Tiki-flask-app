@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <nav class="navbar navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">
+            <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            Bootstrap
+          </a>
+        </nav>
+
+        <nav class="navbar navbar-dark bg-primary">
+            <!-- Navbar content -->
+          </nav>
+
+        <nav class="navbar navbar-dark bg-primary">
+            <a class="navbar-brand"></a>
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-secondary" type="submit">Tìm kiếm</button>
+            </form>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Theo dõi đơn hàng</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Thông báo</a>
+                  </li>
+
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Đăng nhập</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                
+                <button type="button" class="btn btn-info">Giỏ hàng</button>        
+
+        
+          </nav>
+
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">DANH MỤC SẢN PHẨM</button>
+                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                  Bạn muốn giao hàng tới đâu
+                </button>
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary">SẢN PHẨM BẠN ĐÃ XEM</button>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+
+              <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                  TIKI NOW
+                </button>
+
+                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    100% chính hiệu
+                  </button>
+                
+                  <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                      30 ngày đổi trả
+                    </button>
+
+          </nav>
+          <div class="row">
+              <div class="col-4">col-4</div>
+              <div class="col-8">col-8
+                  {% for article in articles %}
+                  <div class="card" style="width: 18rem;">
+                      <img class="card-img-top" src="{{article['images']}}" alt="Card image cap">
+                      <div class="card-body">
+                      <h5 class="card-title">{{article['titles']}}</h5>
+                      <p class="card-text">cat_id: {{article['cat_id']}}</p>
+                      <p class="card-text">name: {{article['name']}}</p>
+                      <p class="card-text">url: {{article['url']}}</p>
+                      <p class="card-text">parent_id: {{article['parent_id']}}</p>
+                      </div>
+                  </div>
+              {% endfor %}
+              </div>
+            
+            </div>
+          </div>
+
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
