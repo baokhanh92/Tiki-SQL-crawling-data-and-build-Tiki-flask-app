@@ -3,6 +3,7 @@
 ## [ 1. OVERVIEW ](/9lRMLcbMR--joBvR84z5KA)
 
 [ **- About Tiki**: ](/9lRMLcbMR--joBvR84z5KA) Tiki is one of the top ecommerce website in Vietnam with a large amount of products.
+
 [ **- Purpose of the project**: ](/9lRMLcbMR--joBvR84z5KA) crawl 2000 products on Tiki and try to reproduct the page on flask app.
 ![](https://i.imgur.com/4CbDh7D.png)
 
